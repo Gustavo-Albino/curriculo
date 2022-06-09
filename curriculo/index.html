@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <section class="fpage">
+        <section class="content">
+            <div class="cfdiv">
+                <h1 class="title">Gustavo Albino</h1>
+                <p>
+                    Olá, seja bem vindo(a) ao meu universo virtual particular,<br>
+                    espero que goste!
+                </p>
+                <ul id="networks">
+                    <li><a href="#"><ion-icon class="icon1" size="large" name="logo-github"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="icon2" size="large" name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="icon3" size="large" name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="icon4" size="large" name="mail-outline"></ion-icon></a></li>
+                </ul>
+            </div>
+            <div class="csdiv">
+                <img src="img/meg.png" alt="minha foto">
+            </div>
+        </section>
+    </section>
+
+    <script>
+        function typeWriter(elemento)
+        {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 100 * i)
+            });
+        }
+        const titulo = document.querySelector('.title')
+        typeWriter(titulo)
+    </script>
+</body>
+</html>
