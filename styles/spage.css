@@ -1,0 +1,57 @@
+.spage {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black-custom-color);
+    color: var(--white-custom-color);
+}
+
+.spage > h2 {
+    font-size: 2rem;
+    margin: 3rem;
+    font-size: 3rem;
+    overflow: hidden;
+}
+
+.spage > .carousel {
+    margin: 0 auto;
+    border: solid 4px var(--corAzul);
+    padding: 4px;
+    border-radius: .5rem;
+    background-color: var(--corAzul);
+    width: 50vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 50vh;
+    overflow: hidden;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de transparência */
+    z-index: 1; /* Coloca a sobreposição acima da imagem */
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 2; /* Coloca o texto acima da sobreposição */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-caption > h5 > a {
+    color: var(--white-custom-color);
+}
+
