@@ -13,17 +13,17 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: var(--black-custom-color);
     color: var(--white-custom-color);
-    font-family: 'Roboto', sans-serif;
 }
 
 .fpage {
     width: 100vw;
-    height: 98vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -55,6 +55,7 @@ body {
 .cfdiv>p {
     font-size: 1.2rem;
     padding: .5rem 0 0 0;
+    width: 75%;
 }
 
 .content>.csdiv {
@@ -66,7 +67,7 @@ body {
     width: 400px;
     text-align: center;
     justify-content: center;
-    margin-top: 17vh;
+    margin: 17vh 5vw 0 0;
 }
 
 #networks {
