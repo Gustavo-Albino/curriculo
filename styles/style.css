@@ -123,73 +123,36 @@ ion-icon {
 }
 
 @media screen and (max-width: 600px) {
-    .content {
-        height: 100vh;
+    .fpage {
+        width: 100vw;
+        height: min-content;
+    }
+ 
+    .fpage>.content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .content>.cfdiv {
+        width: 95%;
+        height: 600px;
+        overflow: hidden;
+    }
+    .cfdiv>p {
+        font-size: 1.2rem;
+        padding: .5rem;
+        width: 95%;
+    }
+    .cfdiv>h1 {
+        font-size: 2.4rem;
+        padding: .5rem;
         width: 100%;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
     }
 
-    #div-img {
-        grid-row: 1;
+    .csdiv {
+        height: 400px;
+    }
+    .csdiv>img {
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #my-img {
-        width: 80%;
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    #div-title {
-        grid-row: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #div-title>.title {
-        font-size: 2rem;
-        position: relative;
-        bottom: 180px;
-        right: 20px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        animation-name: none;
-    }
-
-    .cfdiv>h1::after {
-        content-visibility: hidden;
-    }
-
-    #div-title>p {
-        position: relative;
-        transform: translateY(-170px);
-        right: 20px;
-        text-align: center;
-    }
-
-    .p2 {
-        display: inline-flex;
-    }
-
-    #networks {
-        position: relative;
-        transform: translateY(-80px);
-        margin: 0 auto;
-        width: 80%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        right: 10px;
     }
 }
